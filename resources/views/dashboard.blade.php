@@ -12,7 +12,7 @@
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
       body {
-        background-color: #f8fafc;
+        background-color: #f6f9fc;
         color: #1e293b;
       }
       .navbar {

@@ -6,10 +6,12 @@ use App\Models\tb_pasien;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Symfony\Contracts\Service\Attribute\Required;
 
 class petugasController extends Controller
 {
     public function register(){
+        return view('/register');
         
     }
     public function login(){
@@ -33,4 +35,10 @@ class petugasController extends Controller
 
 
     }
+
+    public function prosesregister(Required $request){
+        
+    }
+
+   
 }

@@ -114,10 +114,13 @@
         <h2>Apotek FarmaMedika</h2>
         <p>Portal Layanan Obat & Pasien</p>
       </div>
+      
+          
+     
 
       <div class="alert-box">
 
-        <span>Pesan status login sistem ditampilkan di sini</span>
+        <span>{{@error->first}}</span>
       </div>
 
       <form action="" method="POST">
