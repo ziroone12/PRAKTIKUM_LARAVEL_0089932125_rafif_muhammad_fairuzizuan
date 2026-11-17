@@ -116,10 +116,12 @@
       </div>
 
       <div class="alert-box">
+
         <span>Pesan status login sistem ditampilkan di sini</span>
       </div>
 
       <form action="" method="POST">
+        @csrf
         <div class="form-group">
           <label>Alamat Email Pasien</label>
           <input

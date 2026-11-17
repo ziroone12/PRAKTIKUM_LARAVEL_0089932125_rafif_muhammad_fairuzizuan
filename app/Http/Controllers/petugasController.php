@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Auth;
 
 class petugasController extends Controller
 {
+    public function register(){
+        
+    }
     public function login(){
         return view('/login');
     }
@@ -22,11 +25,11 @@ class petugasController extends Controller
 
         $ambildata=$request->only('email', ' password');
 
-        if(Auth::attempt($ambildata){
-           $request = redirect()->interted('/dashboard')
-        });else(
-
-        )
+       if(Auth::attempt($ambildata)){
+        redirect('dashboard')->with('pesan','Berhasil masuk');
+       }else{
+        return back()->with('email atau password salah');
+       }
 
 
     }

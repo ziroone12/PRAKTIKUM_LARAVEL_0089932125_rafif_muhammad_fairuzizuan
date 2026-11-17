@@ -12,14 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tb_pasiens', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_pasien');
             $table->string('nama_lengkap')->varchar(100);
             $table->string('email')->varchar(100);
             $table->string('no_telepon')->varchar(20);
-            $table->string('no')
+            $table->string('alamat')->TEXT;
             $table->string('password')->varchar(255);
-            $table->
-            $table->
+            $table->string('status_pasien')->enum('aktif','nonaktif');
             $table->timestamps();
         });
     }
