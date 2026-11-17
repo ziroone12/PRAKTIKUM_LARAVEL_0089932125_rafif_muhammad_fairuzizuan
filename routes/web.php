@@ -8,3 +8,5 @@ Route::get('/', function () {
 });
 
 
+route::get('/login', [petugasController::class, 'login']);
+route::post('/login', [petugasController::class, 'prosesLogin']);

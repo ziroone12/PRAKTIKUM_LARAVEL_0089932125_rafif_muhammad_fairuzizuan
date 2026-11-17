@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nama_lengkap')->varchar(100);
             $table->string('email')->varchar(100);
             $table->string('no_telepon')->varchar(20);
-            $table->
+            $table->string('no')
             $table->string('password')->varchar(255);
             $table->
             $table->
